@@ -1,0 +1,73 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #5c5c8a;
+}
+
+#display {
+  text-align: right;
+  font-size: 24px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #f0f0f0;
+}
+
+.calc {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  width: 300px; /* Adjust the width as needed */
+}
+
+.display-box {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.button-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.button-row button {
+  padding: 20px;
+  font-size: 24px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+  color: white; /* Text color */
+  background-color: #808080; /* Gray background */
+  flex: 1;
+}
+
+.button-row button:hover {
+  background-color: #a0a0a0; /* Lighter gray when active */
+}
+
+.button-row button:active {
+  background-color: #994d00; /* Lighter gray when active */
+}
+
+.button-special {
+  flex: 1;
+}
+
+.button-special.button-clr {
+  background-color: #ff8c00;
+}
+
+.button-special.button-del {
+  background-color: #ff3333;
+}
